@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/apps_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/user_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3339805825242718" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
