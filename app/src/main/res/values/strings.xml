@@ -3,4 +3,8 @@
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="explore">Explore</string>
+    <string name="home">Home</string>
+    <string name="image_banner_for_home">Image Banner For Home</string>
+    <string name="indonesian_heroes">Indonesian Heroes</string>
+
 </resources>
