@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="268dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
     android:layout_margin="4dp"
     android:clickable="true"
     android:focusable="true"
@@ -15,18 +15,18 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/img_hero"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/img_hero"
             android:contentDescription="@string/content_img_for_hero"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
+            android:id="@+id/tv_name_hero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_name_hero"
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="2"
@@ -34,15 +34,24 @@
             android:paddingEnd="16dp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/img_hero"/>
+            app:layout_constraintTop_toBottomOf="@id/img_hero" />
 
         <TextView
+            android:id="@+id/tv_year_hero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_category_hero" />
+
+        <TextView
             android:id="@+id/tv_category_hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textSize="12sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_name_hero"/>
+            app:layout_constraintTop_toBottomOf="@id/tv_name_hero" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

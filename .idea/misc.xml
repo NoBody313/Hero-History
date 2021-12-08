@@ -7,11 +7,12 @@
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_24.xml" value="0.20185185185185187" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/user_24.xml" value="0.20185185185185187" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/white_rounded.xml" value="0.1" />
-        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_detail.xml" value="0.12" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_explore.xml" value="0.25" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
-        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/row_item_hero.xml" value="0.25" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/row_item_hero.xml" value="0.1471698113207547" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3339805825242718" />
       </map>
     </option>
