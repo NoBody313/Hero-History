@@ -24,8 +24,8 @@ object HeroData {
         "1752-1828",
         "1783-1817",
         "1772-1864",
-        "1785-1855",
         "unlisted",
+        "1785-1855",
         "1807-1848",
         "1809-1862",
         "1816-1904",
@@ -34,8 +34,23 @@ object HeroData {
         "1871-1959",
         "1849-1907"
     )
+    private val categoryHero = arrayOf(
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero",
+        "Independence Hero"
+    )
     private val descIndepenndenceHero = arrayOf(
-        "Sultan Agung adalah pahlawan nasional yang berkuasa di kerajaan Mataram. Sultan Agung merupakan pahlawan Indonesia yang menyerang Belanda saat menguasai beberapa daerah. Sultan Agung melakukan serangan dua kali, pertama tahun 1628 dan mengalami kegagalan, dilanjutkan dengan serangan kedua pada 22 Agustus 1629. Serangan ini menyasar benteng-benteng Belanda.",
         "Sultan Hasanuddin memerintah kerajaan Gowa. Ketika itu, Belanda menguasai perdagangan rempah-rempah di wilayah Gowa. Kerajaan yang dipimpin Sultan Hasanuddin berada di wilayah Timur Indonesia yang menguasai perdagangan. Tahun 1666, Cornelis Speelman dari Belanda berhasil menundukkan kerajaan kecil, namun tidak berhasil menundukkan kerajaan Gowa.",
         "Nyi Ageng Sedang ikut berperang menghadapi Belanda. Dia sempat ditangkap dan dibawa ke Yogyakarta. Kemudian pada 1825-1830, Nyi Ageng Serang bergabung dalam pasukan Diponegoro untuk mempertahankan daerah Prambanan dari Belanda.",
         "Kapitan Pattimura atau Thomas Matulessy melakukan perlawanan di Belanda di Maluku. Perlawanan tersebut terjadi pada 14 Mei 1817. Penyerangan ini membuat Gubernur Belanda Mayor Beetjes, memerintahkan pasukannya untuk merebut kembali benteng tersebut. Pasukan Pattimura sempat berhasil merebut benteng Hoorn. Namun, Belanda kembali menyerang dan menangkap Pattimura.",
@@ -71,11 +86,12 @@ object HeroData {
         get() {
             val listIndependenceHero = arrayListOf<Hero>()
             for (position in nameIndependenceHero.indices) {
-                val hero = Hero(
+                val hero = Hero (
                     name = nameIndependenceHero[position],
                     year = yearIndependenceHero[position],
                     desc = descIndepenndenceHero[position],
-                    image = imgIndependenceHero[position]
+                    image = imgIndependenceHero[position],
+                    category = categoryHero[position]
                 )
                 listIndependenceHero.add(hero)
             }

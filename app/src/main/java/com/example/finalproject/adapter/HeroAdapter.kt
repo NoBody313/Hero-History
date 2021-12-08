@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.finalproject.DetailActivity
 import com.example.finalproject.data.Hero
-import com.example.finalproject.databinding.FragmentHomeBinding
 import com.example.finalproject.databinding.RowItemHeroBinding
 
 class HeroAdapter(private val listHero: ArrayList<Hero>) :
@@ -22,17 +22,17 @@ class HeroAdapter(private val listHero: ArrayList<Hero>) :
         holder.binding.apply {
             with(listHero[position]) {
                 tvNameHero.text = name
-                tvYearHero.text = year
+//                tvYearHero.text = year
                 tvCategoryHero.text = category
                 Glide.with(imgHero.context).load(image).into(imgHero)
             }
         }
         holder.itemView.setOnClickListener {
-            val intent = Intent(it.context, Det)
+            val intent = Intent(it.context, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.HERO_DATA, listHero[position])
+            it.context.startActivity(intent)
         }
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = listHero.size
 }

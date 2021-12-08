@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">My Heroes</string>
+
+    <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="explore">Explore</string>
-    <string name="home">Home</string>
+
+    <string name="title_first">My Heroes</string>
+
     <string name="image_banner_for_home">Image Banner For Home</string>
     <string name="indonesian_heroes">Indonesian Heroes</string>
     <string name="content_img_for_hero">Content Img For Hero</string>
@@ -16,5 +20,8 @@
     <string name="twitter_username">Twitter Username</string>
     <string name="head_facebook">Facebook</string>
     <string name="address">facebook.com/abcd.com</string>
+    <string name="hero_name">Hero Name</string>
+    <string name="year">Year</string>
+    <string name="independence_hero">Independence Hero</string>
 
 </resources>

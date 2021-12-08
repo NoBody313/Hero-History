@@ -6,10 +6,9 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Hero(
     var name: String?,
-    var category: String?,
     var year: String?,
     var image: String?,
+    var desc: String?,
+    var category: String?
 
-    var desc: String?
-
-): Parcelable
+) : Parcelable
