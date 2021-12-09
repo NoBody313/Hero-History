@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
     android:layout_marginEnd="16dp"
     android:orientation="vertical"
+    android:layout_marginStart="16dp"
     tools:context=".ui.ExploreFragment">
 
     <TextView
@@ -18,21 +20,21 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <ImageView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="250dp"-->
-<!--        android:id="@+id/img_item_hero"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        tools:src="@tools:sample/avatars"-->
-<!--        android:layout_marginTop="32sp"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/tv_title_nav"/>-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        android:id="@+id/img_item_hero"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        tools:src="@tools:sample/avatars"-->
+    <!--        android:layout_marginTop="32sp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tv_title_nav"/>-->
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_explore"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/rv_explore"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_nav"
-        tools:listitem="@layout/row_item_hero"/>
+        tools:listitem="@layout/row_item_hero" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -65,7 +65,6 @@ object HeroData {
         "R.M. Suryopranoto merupakan pejuang dan pembela rakyat prbumi melawan penjajah. Pahlawan Indonesia satu ini dikenal sebagai pemimpin pemogokan buruh dan menentang kebijakan pemerintah Belanda. Raden Mas Soerjopranoto mendirikan organisasi Personeel Fabriek Bond (PFB). Organisasi itu terdiri dari kalangan buruh, kumpulan petani dan koperasi.",
         "Sisingamaraja XII melakukan pahlawan Indonesia yang melakukan perlawanan terhadap kekuasaan Belanda, di Tapanuli, Sumatera Utara. Tahun 1877, bersama rakyatnya dia berperang melawan Belanda. Perlawanan dimulai dari Bahal Batu, Humbang, sampai Singkil Aceh."
     )
-
     private val imgIndependenceHero = arrayOf(
         "https://upload.wikimedia.org/wikipedia/commons/6/65/Portrait_of_Sultan_Agung_Anyakrakusuma.png",
         "https://upload.wikimedia.org/wikipedia/commons/1/14/Ageng_Serang.jpg",
@@ -96,5 +95,58 @@ object HeroData {
                 listIndependenceHero.add(hero)
             }
             return listIndependenceHero
+        }
+
+    private val nameEducationHero = arrayOf(
+        "K.H Ahmad Dahlan",
+        "R.A Kartini",
+        "Dewi Sartika",
+        "K.H Hasyim Asy'ari",
+        "Rohana Kudus"
+    )
+
+    private val yearEducationHero = arrayOf(
+        "1868-1923",
+        "1879-1904",
+        "1884-1947",
+        "1871-1947",
+        "1884-1972"
+    )
+    private val categoryEducationHero = arrayOf(
+        "Education Hero",
+        "Education Hero",
+        "Education Hero",
+        "Education Hero",
+        "Education Hero"
+    )
+    private val descEducationHero = arrayOf(
+        "Ahmad Dahlan lahir pada 1 Agustus 1868, di Yogyakarta. Ahmad Dahlan adalah pahlawan nasional dan pendiri organisasi Muhammadiyah. Bersama Muhammad Darwis, Ahmad Dahlan mendirikan pendidikan Islam yang diarahkan untuk berbudi pekerti luhur, pendidikan agama dan berjuang pada kemajuan masyarakat. Organisasi Muhammadiyah sendiri menciptakan pembaharuan agama Islam di bidang pendidikan.",
+        "Raden Ajeng Kartini lahir di Jepara pada 21 April 1879. Kartini dikenal sebagai tokoh emansipasi yang memperjuangkan hak-hak wanita pribumi untuk mendapatkan kesetaraan. Kartini juga mendirikan Sekolah Wanita di Rembang. Sekolah ini diperuntukkan bagi wanita pribumi agar bisa merasakan pendidikan seperti kaum laki-laki.",
+        "Dewi Sartika lahir pada 4 Desember 1884 di Cicalengka, Jawa Barat. Dewi Sartika mengenyam pendidikan di Sekolah Istri tahun 1904. Sekolah ini mengajarkan cara menjahit, merenda, menyulam, memasak, mengasuh bayi, dan pelajaran agama. Dewi Sartika adalah pahlawan nasional wanita yang memperjuangkan hak wanita, terutama di bidang pendidikan.",
+        "K.H. Hasyim Asy’ari dikenal sebagai bapak pendidikan Indonesia. Beliau adalah ulama dan pahlawan Indonesia yang lahir pada 14 Februari 1871. Beliau adalah salah satu pendiri Nahdlatul Ulama (NU), organisasi Islam terbesar di Indonesia. K.H. Hasyim Asy’ari juga peduli pada pendidikan umat muslim. Pesantren Tebu Ireng di Jombang, Jawa Timur termasuk sekolah yang didirikan oleh K.H. Hasyim Asy’ari.",
+        "Mengutip dari laman Kemdikbud.go.id, Rohana Kudus ditetapkan sebagai pahlawan nasional 2019. Wanita kelahiran 20 Desember 1884 di Agam, Sumatera Barat ini peduli pada pendidikan wanita. Rohana Kudus mendirikan Sekolah Kerajinan Amai Setia (KAS) di Koto Gadang pada 1911. Sekolah ini khusus untuk perempuan yang ingin belajar baca tulis, mengelola keuangan, pendidikan agama, budi pekerti dan bahasa Belanda. Rohana Kudus sendiri adalah pers wanita yang peduli memperjuangkan pendidikan, seperti R.A. Kartini."
+    )
+    private val imgEducationHero = arrayOf(
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ahmad_Dahlan.jpg/220px-Ahmad_Dahlan.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/23/COLLECTIE_TROPENMUSEUM_Portret_van_Raden_Ajeng_Kartini_TMnr_10018776.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Raden_Dewi_Sartika.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/92/Hasyim_Asyari.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/25/Rohana_Kudus.jpg"
+    )
+
+    val listEducationHero: ArrayList<Hero>
+        get() {
+            val listEducationHero = ArrayList<Hero>()
+            for (position in nameEducationHero.indices) {
+                val hero = Hero (
+                    name = nameEducationHero[position],
+                    year = yearEducationHero[position],
+                    category = categoryEducationHero[position],
+                    desc = descEducationHero[position],
+                    image = imgEducationHero[position]
+                )
+                listEducationHero.add(hero)
+            }
+            return listEducationHero
         }
 }

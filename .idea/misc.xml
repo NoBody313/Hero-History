@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/apps_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/explore_menu.xml" value="0.15925925925925927" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_menu.xml" value="0.15925925925925927" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/ic_bookmark.xml" value="0.17407407407407408" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/shadow_transparent.xml" value="0.1" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/user_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/user_menu.xml" value="0.15925925925925927" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/white_rounded.xml" value="0.1" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_detail.xml" value="0.1963470319634703" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.14" />
