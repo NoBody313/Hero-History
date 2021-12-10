@@ -8,16 +8,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.finalproject.adapter.view.CardViewHeroAdapter
-import com.example.finalproject.adapter.view.GridHeroAdapter
-import com.example.finalproject.adapter.view.ListHeroAdapter
 import com.example.finalproject.data.Hero
 import com.example.finalproject.data.HeroData
-import com.example.finalproject.data.OnItemClickCallback
 import com.example.finalproject.databinding.ActivityMainBinding
+import com.example.finalproject.databinding.FragmentHomeBinding
 import com.example.finalproject.ui.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -35,11 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.hide()
+//        supportActionBar?.hide()
 
         // Sec Act Bar
-        setActionBarTitle(title)
-
         list.addAll(HeroData.listIndependenceHero)
 
         val navView: BottomNavigationView = binding.navView
@@ -56,27 +48,5 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    // Option Menu
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        setMode(item.itemId)
-        return super.onOptionsItemSelected(item)
-    }
-
-    private fun setMode(selectedMode: Int) {
-        when (selectedMode) {
-            R.id.action_grid -> HomeFragment().showRecycleGrid()
-            R.id.action_cardView -> HomeFragment().showRecycleCardView()
-            R.id.action_list -> HomeFragment().showRecycleList()
-        }
-        setActionBarTitle(title)
-    }
-
-    private fun setActionBarTitle(title: String) {
-        supportActionBar?.title = title
-    }
 }

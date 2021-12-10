@@ -2,49 +2,43 @@ package com.example.finalproject.adapter.view
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.finalproject.DetailActivity
-import com.example.finalproject.R
-import com.example.finalproject.data.OnItemClickCallback
 import com.example.finalproject.data.Hero
+import com.example.finalproject.data.OnItemClickCallback
+import com.example.finalproject.databinding.ItemListHeroBinding
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>) :
     RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
+    class ListViewHolder(val binding: ItemListHeroBinding) : RecyclerView.ViewHolder(binding.root)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ListViewHolder(
+        ItemListHeroBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    )
+
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
-    }
-
-    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var tvName: TextView = itemView.findViewById(R.id.tv_name_hero)
-        var tvCategory: TextView = itemView.findViewById(R.id.tv_category_hero)
-        var imgPhoto: ImageView = itemView.findViewById(R.id.img_hero)
-    }
-
-    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ListViewHolder {
-        val view: View =
-            LayoutInflater.from(viewGroup.context).inflate(R.layout.item_card_view, viewGroup)
-        return ListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val hero = listHero[position]
 
-        Glide.with(holder.itemView.context)
-            .load(hero.image)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.imgPhoto)
+        holder.binding.apply {
+            Glide.with(holder.itemView.context)
+                .load(hero.image)
+                .apply(RequestOptions().override(55, 55))
+                .into(imgItemPhoto)
 
-        holder.tvName.text = hero.name
-        holder.tvCategory.text = hero.category
+            tvNameHero.text = hero.name
+            tvCategoryHero.text = hero.category
+        }
+
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, DetailActivity::class.java)
