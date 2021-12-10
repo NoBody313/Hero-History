@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Heroes</string>
+
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="explore">Explore</string>
+
+    <string name="title_first">Pahlawanku</string>
+
+    <string name="image_banner_for_home">Image Banner For Home</string>
+    <string name="indonesian_heroes">Pahlawan Indonesia</string>
+    <string name="content_img_for_hero">Content Img For Hero</string>
+
+    <string name="hero_name">Nama Pahlawan</string>
+    <string name="year">Tahun</string>
+    <string name="independence_hero">Pahlawan Kemerdekaan</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="card_view">Card View</string>
+
+    <string name="you_chose">Kamu memilih\ </string>
+
+</resources>

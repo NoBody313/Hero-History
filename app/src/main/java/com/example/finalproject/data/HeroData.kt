@@ -34,22 +34,22 @@ object HeroData {
         "1871-1959",
         "1849-1907"
     )
-    private val categoryHero = arrayOf(
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero",
-        "Independence Hero"
-    )
+//    private val categoryHero = arrayOf(
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero",
+//        "Independence Hero"
+//    )
     private val descIndepenndenceHero = arrayOf(
         "Sultan Hasanuddin memerintah kerajaan Gowa. Ketika itu, Belanda menguasai perdagangan rempah-rempah di wilayah Gowa. Kerajaan yang dipimpin Sultan Hasanuddin berada di wilayah Timur Indonesia yang menguasai perdagangan. Tahun 1666, Cornelis Speelman dari Belanda berhasil menundukkan kerajaan kecil, namun tidak berhasil menundukkan kerajaan Gowa.",
         "Nyi Ageng Sedang ikut berperang menghadapi Belanda. Dia sempat ditangkap dan dibawa ke Yogyakarta. Kemudian pada 1825-1830, Nyi Ageng Serang bergabung dalam pasukan Diponegoro untuk mempertahankan daerah Prambanan dari Belanda.",
@@ -89,8 +89,7 @@ object HeroData {
                     name = nameIndependenceHero[position],
                     year = yearIndependenceHero[position],
                     desc = descIndepenndenceHero[position],
-                    image = imgIndependenceHero[position],
-                    category = categoryHero[position]
+                    image = imgIndependenceHero[position]
                 )
                 listIndependenceHero.add(hero)
             }
@@ -112,13 +111,13 @@ object HeroData {
         "1871-1947",
         "1884-1972"
     )
-    private val categoryEducationHero = arrayOf(
-        "Education Hero",
-        "Education Hero",
-        "Education Hero",
-        "Education Hero",
-        "Education Hero"
-    )
+//    private val categoryEducationHero = arrayOf(
+//        "Education Hero",
+//        "Education Hero",
+//        "Education Hero",
+//        "Education Hero",
+//        "Education Hero"
+//    )
     private val descEducationHero = arrayOf(
         "Ahmad Dahlan lahir pada 1 Agustus 1868, di Yogyakarta. Ahmad Dahlan adalah pahlawan nasional dan pendiri organisasi Muhammadiyah. Bersama Muhammad Darwis, Ahmad Dahlan mendirikan pendidikan Islam yang diarahkan untuk berbudi pekerti luhur, pendidikan agama dan berjuang pada kemajuan masyarakat. Organisasi Muhammadiyah sendiri menciptakan pembaharuan agama Islam di bidang pendidikan.",
         "Raden Ajeng Kartini lahir di Jepara pada 21 April 1879. Kartini dikenal sebagai tokoh emansipasi yang memperjuangkan hak-hak wanita pribumi untuk mendapatkan kesetaraan. Kartini juga mendirikan Sekolah Wanita di Rembang. Sekolah ini diperuntukkan bagi wanita pribumi agar bisa merasakan pendidikan seperti kaum laki-laki.",
@@ -141,7 +140,6 @@ object HeroData {
                 val hero = Hero (
                     name = nameEducationHero[position],
                     year = yearEducationHero[position],
-                    category = categoryEducationHero[position],
                     desc = descEducationHero[position],
                     image = imgEducationHero[position]
                 )

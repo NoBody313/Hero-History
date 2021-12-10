@@ -10,6 +10,7 @@
     <string name="image_banner_for_home">Image Banner For Home</string>
     <string name="indonesian_heroes">Indonesian Heroes</string>
     <string name="content_img_for_hero">Content Img For Hero</string>
+
     <string name="hero_name">Hero Name</string>
     <string name="year">Year</string>
     <string name="independence_hero">Independence Hero</string>
@@ -17,4 +18,30 @@
     <string name="list">List</string>
     <string name="card_view">Card View</string>
 
+    <string name="you_chose">You chose\ </string>
+
+    <string-array name="category_hero">
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+        <item>Independence Hero</item>
+    </string-array>
+
+    <string-array name="category_in_hero">
+        <item>Education Hero</item>
+        <item>Education Hero</item>
+        <item>Education Hero</item>
+        <item>Education Hero</item>
+        <item>Education Hero</item>
+    </string-array>
 </resources>

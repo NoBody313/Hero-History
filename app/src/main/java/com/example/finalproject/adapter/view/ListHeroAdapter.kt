@@ -3,10 +3,12 @@ package com.example.finalproject.adapter.view
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.finalproject.DetailActivity
+import com.example.finalproject.R
 import com.example.finalproject.data.Hero
 import com.example.finalproject.data.OnItemClickCallback
 import com.example.finalproject.databinding.ItemListHeroBinding
@@ -44,6 +46,12 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) :
             val intent = Intent(it.context, DetailActivity::class.java)
             intent.putExtra(DetailActivity.HERO_DATA, listHero[position])
             it.context.startActivity(intent)
+
+            Toast.makeText(
+                holder.itemView.context,
+                holder.itemView.context.getString(R.string.you_chose) + listHero[position].name,
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -46,8 +47,13 @@ class CardViewHeroAdapter(private val listHero: ArrayList<Hero>) :
                 val intent = Intent(it.context, DetailActivity::class.java)
                 intent.putExtra(DetailActivity.HERO_DATA, listHero[position])
                 it.context.startActivity(intent)
-            }
 
+                Toast.makeText(
+                    holder.itemView.context,
+                    holder.itemView.context.getString(R.string.you_chose) + listHero[position].name,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 
