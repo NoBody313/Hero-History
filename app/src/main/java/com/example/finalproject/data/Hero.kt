@@ -8,6 +8,7 @@ data class Hero(
     var name: String?,
     var year: String?,
     var image: String?,
-    var desc: String?
+    var desc: String?,
+    var category: String?
 
 ) : Parcelable
