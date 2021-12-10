@@ -10,18 +10,11 @@
     <string name="image_banner_for_home">Image Banner For Home</string>
     <string name="indonesian_heroes">Indonesian Heroes</string>
     <string name="content_img_for_hero">Content Img For Hero</string>
-    <string name="name_profile">Jhon Doe</string>
-    <string name="place_profile">Jakarta</string>
-    <string name="email">abcd@exaple.com</string>
-    <string name="head_email">Email</string>
-    <string name="head_phone">Phone</string>
-    <string name="number_phone">+12 345 6789 0123</string>
-    <string name="head_twitter">Twitter</string>
-    <string name="twitter_username">Twitter Username</string>
-    <string name="head_facebook">Facebook</string>
-    <string name="address">facebook.com/abcd.com</string>
     <string name="hero_name">Hero Name</string>
     <string name="year">Year</string>
     <string name="independence_hero">Independence Hero</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="card_view">Card View</string>
 
 </resources>

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/apps_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/bookmark_menu.xml" value="0.21875" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/explore_menu.xml" value="0.15925925925925927" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_24.xml" value="0.20185185185185187" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/home_menu.xml" value="0.15925925925925927" />
@@ -14,11 +15,16 @@
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/drawable/white_rounded.xml" value="0.1" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_detail.xml" value="0.1963470319634703" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_bookmark.xml" value="0.11203703703703703" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_explore.xml" value="0.25" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_home.xml" value="0.18314099347717008" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/item_card_view.xml" value="0.6550094517958412" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/item_grid_hero.xml" value="0.20052083333333334" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/item_row_hero.xml" value="0.20052083333333334" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/layout/row_item_hero.xml" value="0.1471698113207547" />
         <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3339805825242718" />
+        <entry key="..\:/Android Dev/Projek Kotlin/FinalProject/app/src/main/res/menu/main_menu.xml" value="0.33" />
       </map>
     </option>
   </component>

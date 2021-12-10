@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.finalproject.adapter.HeroAdapter
+import com.example.finalproject.adapter.view.CardViewHeroAdapter
 import com.example.finalproject.data.HeroData
 import com.example.finalproject.databinding.FragmentExploreBinding
 import com.example.finalproject.databinding.FragmentExploreBinding.inflate
@@ -25,11 +25,12 @@ class ExploreFragment : Fragment() {
         return binding.root
     }
 
+    // CardView
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.rvExplore.apply {
             layoutManager = GridLayoutManager(activity, 3)
-            adapter = HeroAdapter(HeroData.listEducationHero)
+            adapter = CardViewHeroAdapter(HeroData.listEducationHero)
         }
     }
 
